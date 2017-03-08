@@ -29,17 +29,7 @@ https://leetcode.com/problems/two-sum/?tab=Description
  */
 
 public class q_01_TwoSum {
-    public static void main(String[] args){
-        int[] nums = {6,6,6,2,7,11,15};
-        int target = 9;
-
-        int[] result =new int[2];
-        result =twoSum(nums,target);
-        for (int i = 0;i<2;i++){
-            System.out.println(result[i]);
-        }
-    }
-
+ 
     public  static int[] twoSum(int[] nums,int target){
         int[] result = new int[2];
         Map<Integer ,Integer> map = new HashMap<Integer, Integer>();
