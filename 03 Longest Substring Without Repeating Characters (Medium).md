@@ -21,7 +21,7 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/?ta
 
 经分析，可以采用HashMap来存储每个字符(key,val),其中key存储字符，val存储其索引。用charAt函数可以很方便的根据索引返回值
 
-定义两个指针i/j，i从字符串的第一个字符开始扫描，如果s.charAt(i)不在HashMap中，加入。否则，将j移到i的位置，同时记录此时找到的子串长度i-j+1.继续向后查找，找出最大的子串长度。
+定义两个指针i/j，i从字符串的第一个字符开始扫描，如果s.charAt(i)不在HashMap中，加入。否则，将j移到HashMap中存在字符的下一个位置，同时记录此时找到的子串长度i-j+1.继续向后查找，找出最大的子串长度。
 
 
 
